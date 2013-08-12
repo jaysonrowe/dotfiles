@@ -13,7 +13,7 @@ servers = (
     chatnet = "GIMPnet";
     port = "6667";
     autoconnect = "yes";
-  }
+  },
   {
     address = "irc.oftc.net";
     chatnet = "OFTC";
@@ -39,6 +39,24 @@ channels = (
   { name = "silc"; chatnet = "silc"; autojoin = "No"; },
   {
     name = "#citrt";
+    chatnet = "freenode";
+    autojoin = "yes";
+    password = "";
+  },
+  {
+    name = "fedora";
+    chatnet = "freenode";
+    autojoin = "yes";
+    password = "";
+  },
+  {
+    name = "fedora-kde";
+    chatnet = "freenode";
+    autojoin = "yes";
+    password = "";
+  },
+  {
+    name = "#kde";
     chatnet = "freenode";
     autojoin = "yes";
     password = "";
@@ -73,7 +91,7 @@ channels = (
     autojoin = "yes";
     password = "";
   },
-  { name = "#mono"; chatnet = "GIMPnet"; autojoin = "yes"; }
+  { name = "#mono"; chatnet = "GIMPnet"; autojoin = "yes"; },
   { name = "#debian"; chatnet = "OFTC"; autojoin = "yes"; }
 );
 aliases = {
@@ -225,9 +243,9 @@ statusbar = {
 };
 settings = {
   core = {
-    real_name = "";
-    user_name = "";
-    nick = "";
+    real_name = "Jayson Rowe";
+    user_name = "jaysonr";
+    nick = "jaysonr";
   };
   "fe-text" = { actlist_sort = "refnum"; };
   "fe-common/core" = { theme = "default"; };
