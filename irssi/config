@@ -56,6 +56,12 @@ channels = (
     password = "";
   },
   {
+    name = "#xfce";
+    chatnet = "freenode";
+    autojoin = "yes";
+    password = "";
+  },
+  {
     name = "#kde";
     chatnet = "freenode";
     autojoin = "yes";
