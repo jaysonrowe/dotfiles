@@ -50,12 +50,6 @@ channels = (
     password = "";
   },
   {
-    name = "fedora-kde";
-    chatnet = "freenode";
-    autojoin = "yes";
-    password = "";
-  },
-  {
     name = "#xfce";
     chatnet = "freenode";
     autojoin = "yes";
