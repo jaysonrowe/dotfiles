@@ -1,7 +1,13 @@
-Xft.autohint:	0
-Xft.dpi:        96
-Xft.antialias:  true
-Xft.rgba:       rgb
-Xft.hinting:    true
-Xft.hintstyle:  hintslight
-Xft.lcdfilter:  lcddefault
+! xterm ------ 
+XTerm*utf8: 1
+XTerm*font: -*-terminus-medium-*-*-*-18-*-*-*-*-*-iso10646-*
+XTerm*pointerColor: white
+XTerm*pointerColorBackground: black
+XTerm*cursorColor: yellow
+XTerm*cursorBlink: true
+XTerm*selectToClipboard: true
+XTerm*SaveLines: 9000
+XTerm*ScrollBar: false 
+! xterm color scheme -----
+*background: rgb:00/00/00
+*foreground: rgb:ff/ff/ff
