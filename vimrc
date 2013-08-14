@@ -19,7 +19,10 @@ set expandtab        " expand tabs to spaces
  
 " wrap lines at 120 chars. 80 is somewaht antiquated with nowadays displays.
 set textwidth=120
- 
+
+" set initial window size to 125 columns, 50 lines.
+set lines=50 columns=125
+
 " turn syntax highlighting on
 set t_Co=256
 syntax on
