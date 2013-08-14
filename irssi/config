@@ -248,7 +248,7 @@ settings = {
     nick = "jaysonr";
   };
   "fe-text" = { actlist_sort = "refnum"; };
-  "fe-common/core" = { theme = "88_madcows"; };
+  "fe-common/core" = { theme = "default"; };
   "perl/core/scripts" = { nicklist_automode = "SCREEN"; };
 };
 keyboard = (
