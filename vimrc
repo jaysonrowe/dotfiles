@@ -2,7 +2,10 @@
 set enc=utf-8
 set fenc=utf-8
 set termencoding=utf-8
- 
+
+" fix backspace in Insert mode
+set backspace=2
+
 " disable vi compatibility (emulation of old bugs)
 set nocompatible
  
