@@ -1,0 +1,49 @@
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+    . `brew --prefix`/etc/bash_completion
+fi
+
+# git commamands simplified
+alias gst='git status'
+alias gco='git checkout'
+alias gci='git commit'
+alias grb='git rebase'
+alias gbr='git branch'
+alias glg='git log --date-order --all --graph --format="%C(green)%h%Creset %C(yellow)%an%Creset %C(blue bold)%ar%Creset %C(red bold)%d%Creset%s"'
+alias glg2='git log --date-order --all --graph --name-status --format="%C(green)%H%Creset %C(yellow)%an%Creset %C(blue bold)%ar%Creset %C(red bold)%d%Creset%s"'
+
+# ls alias for color-mode
+alias lsa='ls -laG'
+alias lsl='ls -lG'
+
+# up 'n' folders
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+
+# Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
+alias brewupdate='brew update; brew upgrade; brew cleanup;'
+
+# IP addresses
+alias externalip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias localip="ipconfig getifaddr en0"
+
+# ROT13-encode text. Works for decoding, too! ;)
+alias rot13='tr a-zA-Z n-za-mN-ZA-M'
+
+# grep with color
+alias grep='grep --color=auto'
+
+# refresh shell
+alias reload='source ~/.bash_profile'
+
+# open Sublime Text from a shell
+alias subl='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
+
+# shortcuts to directories
+alias home='cd ~'
+alias dropbox='cd ~/Dropbox'
+
+# Change prompt
+#export PS1='\[\033[1;34m\]\t\[\033[0m\] \[\033[1;35m\]\u\[\033[0m\]:\[\033[1;35m\]\W\[\033[0m\] \[\033[1;92m\]$(__git_ps1 "(%s)")\[\033[0m\]$ '
+PS1='\[\033[1;32m\][\u@\h \[\033[31m\]\W\[\033[33m\]$(__git_ps1 " (%s)")\[\033[1;32m\]]\\$\[\033[m\] '
