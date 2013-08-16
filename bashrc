@@ -40,7 +40,7 @@ alias localip="ipconfig getifaddr en0"
 alias grep='grep --color=auto'
 
 # refresh shell
-alias reload='. .bashrc'
+alias reload='. ~/.bashrc'
 
 # custom prompt
 PS1='\[\033[1;32m\][\u@\h \[\033[31m\]\W\[\033[33m\]$(__git_ps1 " (%s)")\[\033[1;32m\]]\\$\[\033[m\] '
