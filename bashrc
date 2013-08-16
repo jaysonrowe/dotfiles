@@ -6,9 +6,14 @@ if [ -f /etc/bashrc ]; then
 fi
 
 # git commamands simplified
+alias gpr='git pull --rebase'
+alias gpom='git push origin master'
+alias gpod='git push origin develop'
+alias gaa='git add .'
 alias gst='git status'
 alias gco='git checkout'
 alias gci='git commit'
+alias gcm='git commit -m'
 alias grb='git rebase'
 alias gbr='git branch'
 alias glg='git log --date-order --all --graph --format="%C(green)%h%Creset %C(yellow)%an%Creset %C(blue bold)%ar%Creset %C(red bold)%d%Creset%s"'
