@@ -45,8 +45,6 @@ set undodir=$HOME/.vim/tmp/undo/
 " store undo files, undo edits after deleting a buffer
 set undofile
 set viminfo='50,n$HOME/.vim/tmp/viminfo
-"set guifont=Consolas:h10
-"set anti gfn=Consolas:h10
 
 if has("gui_running")
   if has("gui_gtk2")
@@ -56,8 +54,8 @@ if has("gui_running")
     set guifont=Consolas:h10
     set anti gfn=Consolas:h10
   elseif has("gui_macvim")
-    set guifont=Menlo:h11
-    set anti gfn=Menlo:h11
+    set guifont=Monaco:h10
+    set anti gfn=Monaco:h10
   endif
 endif  
 
