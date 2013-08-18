@@ -15,7 +15,7 @@ XTerm*bellIsUrgent: true 
 
 ! xterm fonts -----
 ! # default
-XTerm*font: -*-terminus-medium-*-*-*-18-*-*-*-*-*-iso10646-*
+XTerm*font: -*-terminus-medium-*-*-*-16-*-*-*-*-*-iso10646-*
 ! # unreadable
 XTerm*font1: -*-terminus-medium-*-*-*-12-*-*-*-*-*-iso10646-*
 ! # tiny
@@ -23,8 +23,9 @@ XTerm*font2: -*-terminus-medium-*-*-*-14-*-*-*-*-*-iso10646-*
 ! # small
 XTerm*font3: -*-terminus-medium-*-*-*-16-*-*-*-*-*-iso10646-*
 ! # medium
-XTerm*font4: -*-terminus-medium-*-*-*-22-*-*-*-*-*-iso10646-*
+XTerm*font4: -*-terminus-medium-*-*-*-18-*-*-*-*-*-iso10646-*
 ! # large
-XTerm*font5: -*-terminus-medium-*-*-*-24-*-*-*-*-*-iso10646-*
+XTerm*font5: -*-terminus-medium-*-*-*-22-*-*-*-*-*-iso10646-*
 ! # huge
-XTerm*font6: -*-terminus-medium-*-*-*-32-*-*-*-*-*-iso10646-*
+XTerm*font6: -*-terminus-medium-*-*-*-24-*-*-*-*-*-iso10646-*
+
