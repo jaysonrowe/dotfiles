@@ -5,6 +5,17 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
+# cd stuff
+alias cdn='cd $(ls -c | head -n1)'
+function mkdircd () { mkdir -p "$@" && eval cd "\"\$$#\""; }
+function cdls() { cd "$1" && ls; }
+
+# up 'n' folders
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+
 # yum aliases
 alias ycu='sudo yum check-update'
 alias yi='sudo yum install'
@@ -53,12 +64,6 @@ alias mv='mv -i'
 alias cp='cp -i'
 alias untar='tar -zxvf'
 alias top='htop'
-
-# up 'n' folders
-alias ..='cd ..'
-alias ...='cd ../..'
-alias ....='cd ../../..'
-alias .....='cd ../../../..'
 
 # IP addresses
 alias externalip='dig +short myip.opendns.com @resolver1.opendns.com'
