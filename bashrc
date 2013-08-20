@@ -16,6 +16,11 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
 
+# file operations
+alias rm='rm -i'
+alias mv='mv -i'
+alias cp='cp -i'
+
 # yum aliases
 alias ycu='sudo yum check-update'
 alias yi='sudo yum install'
@@ -59,16 +64,8 @@ alias lsl='ls -lG'
 
 # misc
 alias df='df -h'
-alias rm='rm -i'
-alias mv='mv -i'
-alias cp='cp -i'
 alias untar='tar -zxvf'
 alias top='htop'
-
-# IP addresses
-alias externalip='dig +short myip.opendns.com @resolver1.opendns.com'
-alias wifiip='ipconfig getifaddr wlp4s0'
-alias lanip='ifconfig getifaddr p5p1'
 
 # grep with color
 alias grep='grep --color=auto'
