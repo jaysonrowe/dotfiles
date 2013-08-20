@@ -16,10 +16,14 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
 
-# file operations
+# file operations with safety net
 alias rm='rm -i'
 alias mv='mv -i'
 alias cp='cp -i'
+
+# ls alias for color-mode
+alias lsa='ls -laG'
+alias lsl='ls -lG'
 
 # yum aliases
 alias ycu='sudo yum check-update'
@@ -55,13 +59,6 @@ alias gbr='git branch'
 alias glg='git log --date-order --all --graph --format="%C(green)%h%Creset %C(yellow)%an%Creset %C(blue bold)%ar%Creset %C(red bold)%d%Creset%s"'
 alias glg2='git log --date-order --all --graph --name-status --format="%C(green)%H%Creset %C(yellow)%an%Creset %C(blue bold)%ar%Creset %C(red bold)%d%Creset%s"'
 
-# enable __git_ps1
-source /usr/share/git-core/contrib/completion/git-prompt.sh
-
-# ls alias for color-mode
-alias lsa='ls -laG'
-alias lsl='ls -lG'
-
 # misc
 alias df='df -h'
 alias untar='tar -zxvf'
@@ -72,6 +69,9 @@ alias grep='grep --color=auto'
 
 # refresh shell
 alias reload='. ~/.bashrc'
+
+# enable __git_ps1
+source /usr/share/git-core/contrib/completion/git-prompt.sh
 
 # custom prompt
 PS1='\[\033[0;32m\][\u@\h \[\033[31m\]\W\[\033[33m\]$(__git_ps1 " (%s)")\[\033[0;32m\]]\\$\[\033[m\] '
