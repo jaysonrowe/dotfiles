@@ -5,7 +5,27 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
-# git commamands simplified
+# yum aliases
+alias ycu='sudo yum check-update'
+alias yi='sudo yum install'
+alias yli='sudo yum localinstall --nogpgcheck'
+alias ypr='sudo yum provides'
+alias yprw='sudo yum provides $(which$ 1)'
+alias yr='sudo yum remove'
+alias ys='sudo yum search'
+alias yu='sudo yum update'
+alias yyi='sudo yum -y install'
+alias yyr='sudo yum -y remove'
+alias yys='sudo yum -C search'
+alias yyu='sudo yum -y update'
+alias yyyi='sudo yum -Cy install'
+
+# common directories
+alias desktop='cd ~/Desktop'
+alias downloads='cd ~/Downloads'
+
+
+# git aliases
 alias gpr='git pull --rebase'
 alias gpom='git push origin master'
 alias gpod='git push origin develop'
@@ -26,6 +46,14 @@ source /usr/share/git-core/contrib/completion/git-prompt.sh
 alias lsa='ls -laG'
 alias lsl='ls -lG'
 
+# misc
+alias df='df -h'
+alias rm='rm -i'
+alias mv='mv -i'
+alias cp='cp -i'
+alias untar='tar -zxvf'
+alias top='htop'
+
 # up 'n' folders
 alias ..='cd ..'
 alias ...='cd ../..'
@@ -33,8 +61,9 @@ alias ....='cd ../../..'
 alias .....='cd ../../../..'
 
 # IP addresses
-alias externalip="dig +short myip.opendns.com @resolver1.opendns.com"
-alias localip="ipconfig getifaddr en0"
+alias externalip='dig +short myip.opendns.com @resolver1.opendns.com'
+alias wifiip='ipconfig getifaddr wlp4s0'
+alias lanip='ifconfig getifaddr p5p1'
 
 # grep with color
 alias grep='grep --color=auto'
