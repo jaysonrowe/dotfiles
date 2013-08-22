@@ -1,0 +1,7 @@
+.DS_Store
+.svn
+*~
+*.swp
+*.swo
+*.swn
+vim/tmp
