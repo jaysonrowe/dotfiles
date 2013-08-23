@@ -3,21 +3,38 @@ set enc=utf-8
 set fenc=utf-8
 set termencoding=utf-8
 
+set nocompatible
+filetype off
+
+" Vundle stuff
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required!
+Bundle 'gmarik/vundle'
+"The bundles you install will be listed here
+Bundle 'scrooloose/nerdtree'
+Bundle 'klen/python-mode'
+
+" Turn on NerdTree
+map <F2> :NERDTreeToggle<CR>
+
 " fix backspace in Insert mode
 set backspace=2
 
-" disable vi compatibility (emulation of old bugs)
-set nocompatible
- 
-" use indentation of previous line
+" indention 
 set autoindent
+filetype indent plugin on 
+set modeline
 
 " set linebreak to honor boundaries of a word when wrapping text
 set linebreak
  
 " configure tabwidth and insert spaces instead of tabs
-set tabstop=2        " tab width is 4 spaces
-set shiftwidth=2     " indent also with 4 spaces
+set tabstop=4        " tab width is 4 spaces
+set shiftwidth=4     " indent also with 4 spaces
 set expandtab        " expand tabs to spaces
  
 " wrap lines at 120 chars. 80 is somewaht antiquated with nowadays displays.
@@ -54,9 +71,50 @@ if has("gui_running")
     set guifont=Consolas:h10
     set anti gfn=Consolas:h10
   elseif has("gui_macvim")
-    set guifont=Monaco:h10
-    set anti gfn=Monaco:h10
+    set guifont=Menlo:h11
+    set anti gfn=Menlo:h11
   endif
 endif  
 
 colorscheme vividchalk
+
+"options for PythonMode
+" Activate rope
+" Keys:
+" K             Show python docs
+" <Ctrl-Space>  Rope autocomplete
+" <Ctrl-c>g     Rope goto definition
+" <Ctrl-c>d     Rope show documentation
+" <Ctrl-c>f     Rope find occurrences
+" <Leader>b     Set, unset breakpoint (g:pymode_breakpoint enabled)
+" [[            Jump on previous class or function (normal, visual, operator modes)
+" ]]            Jump on next class or function (normal, visual, operator modes)
+" [M            Jump on previous class or method (normal, visual, operator modes)
+" ]M            Jump on next class or method (normal, visual, operator modes)
+let g:pymode_rope = 1
+
+" Documentation
+let g:pymode_doc = 1
+let g:pymode_doc_key = 'K'
+
+"Linting
+let g:pymode_lint = 1
+let g:pymode_lint_checker = "pyflakes,pep8"
+" Auto check on save
+let g:pymode_lint_write = 1
+
+" Support virtualenv
+let g:pymode_virtualenv = 1
+
+" Enable breakpoints plugin
+let g:pymode_breakpoint = 1
+let g:pymode_breakpoint_key = '<leader>b'
+
+" syntax highlighting
+let g:pymode_syntax = 1
+let g:pymode_syntax_all = 1
+let g:pymode_syntax_indent_errors = g:pymode_syntax_all
+let g:pymode_syntax_space_errors = g:pymode_syntax_all
+
+" Don't autofold code
+let g:pymode_folding = 0
