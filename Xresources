@@ -1,3 +1,5 @@
+Xft.lcdfilter: lcddefault
+
 ! gerneral xterm settings ----- 
 XTerm*utf8: 1
 XTerm*pointerColor: white
