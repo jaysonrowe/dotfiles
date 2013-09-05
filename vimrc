@@ -65,8 +65,8 @@ set viminfo='50,n$HOME/.vim/tmp/viminfo
 
 if has("gui_running")
   if has("gui_gtk2")
-    set guifont=Inconsolata\ 9
-    set anti gfn=Inconsolata\ 9
+    set guifont=Inconsolata\ 11
+    set anti gfn=Inconsolata\ 11
   elseif has("gui_win32")
     set guifont=Consolas:h10
     set anti gfn=Consolas:h10
