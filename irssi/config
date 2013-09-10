@@ -92,7 +92,7 @@ channels = (
     password = "";
   },
   { name = "#mono"; chatnet = "GIMPnet"; autojoin = "yes"; },
-  { name = "#marketing; chatnet = "GIMPnet"; autojoin = "yes"; },
+  { name = "#marketing"; chatnet = "GIMPnet"; autojoin = "yes"; },
   { name = "#debian"; chatnet = "OFTC"; autojoin = "yes"; }
 );
 aliases = {
