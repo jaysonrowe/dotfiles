@@ -41,7 +41,7 @@ set expandtab        " expand tabs to spaces
 set textwidth=120
 
 " set initial window size to 125 columns, 50 lines.
-set lines=60 columns=170
+set lines=55 columns=170
 
 " turn syntax highlighting on
 set t_Co=256
@@ -65,8 +65,8 @@ set viminfo='50,n$HOME/.vim/tmp/viminfo
 
 if has("gui_running")
   if has("gui_gtk2")
-    set guifont=Inconsolata\ 11
-    set anti gfn=Inconsolata\ 11
+    set guifont=Ubuntu\ Mono\ 11
+    set anti gfn=Ubuntu\ Mono\ 11
   elseif has("gui_win32")
     set guifont=Consolas:h10
     set anti gfn=Consolas:h10
