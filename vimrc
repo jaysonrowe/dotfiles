@@ -6,20 +6,11 @@ set termencoding=utf-8
 set nocompatible
 filetype off
 
-" Vundle stuff
-
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-" let Vundle manage Vundle
-" required!
-Bundle 'gmarik/vundle'
-"The bundles you install will be listed here
-Bundle 'scrooloose/nerdtree'
-Bundle 'klen/python-mode'
+" enable pathogen
+execute pathogen#infect()
 
 " Turn on NerdTree
-map <F2> :NERDTreeToggle<CR>
+map <C-n> :NERDTreeToggle<CR>
 
 " fix backspace in Insert mode
 set backspace=2
@@ -71,8 +62,8 @@ if has("gui_running")
     set guifont=Consolas:h10
     set anti gfn=Consolas:h10
   elseif has("gui_macvim")
-    set guifont=Menlo:h11
-    set anti gfn=Menlo:h11
+    set guifont=Monaco:h10
+    set anti gfn=Monaco:h10
   endif
 endif  
 

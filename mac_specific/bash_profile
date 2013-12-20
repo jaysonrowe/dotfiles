@@ -2,6 +2,9 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
     . `brew --prefix`/etc/bash_completion
 fi
 
+source ~/.git-prompt.sh
+
+
 # git commamands simplified
 alias gpr='git pull --rebase'
 alias gpom='git push origin master'
