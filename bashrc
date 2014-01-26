@@ -178,5 +178,6 @@ alias grep='grep --color=auto'
 alias reload='. ~/.bashrc'
 
 # custom prompt
-PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\[\033[00m\]\[\033[01;32m\]$(__git_ps1 " (%s)")\[\033[00m\]\$ '
+#PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\[\033[00m\]\[\033[01;32m\]$(__git_ps1 " (%s)")\[\033[00m\]\$ '
 #PS1='\W\[\033[00m\]\[\033[01;32m\]$(__git_ps1 " (%s)")\[\033[00m\]\$ '
+PS1='\[\033[1;34m\]\t\[\033[0m\] \[\033[1;35m\]\u\[\033[0m\]:\[\033[1;35m\]\W\[\033[0m\] \[\033[1;92m\]$(__git_ps1 "(%s)")\[\033[0m\]$ '
