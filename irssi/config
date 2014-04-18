@@ -44,6 +44,12 @@ channels = (
     password = "";
   },
   {
+    name = "pditrt";
+    chatnet = "freenode";
+    autojoin = "yes";
+    password = "";
+  },
+  {
     name = "fedora";
     chatnet = "freenode";
     autojoin = "yes";
